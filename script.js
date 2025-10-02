@@ -1,3 +1,4 @@
+
 // College data structure with ALL colleges from the PDF
 let colleges = [
     {
@@ -7,7 +8,7 @@ let colleges = [
         name: "R.V. COLLEGE OF ENGINEERING, R.V. VIDYANIKETAN POST, MYSORE ROAD, BANGALORE",
         location: "Bangalore",
         fee: "68,560",
-        rank2023: { "1g": "", "gm": "" },
+        rank2023: { "1g": "132", "gm": "31" },
         rank2024: { "1g": "", "gm": "" },
         mock: { "1g": "", "gm": "" }
     },
@@ -18,7 +19,7 @@ let colleges = [
         name: "M. S. RAMAIAH INSTITUTE OF TECHNOLOGY-MCA VIDYA SOUPIA, MSRIT POST, BANGALORE",
         location: "Bangalore",
         fee: "68,560",
-        rank2023: { "1g": "", "gm": "" },
+        rank2023: { "1g": "340", "gm": "193" },
         rank2024: { "1g": "", "gm": "" },
         mock: { "1g": "", "gm": "" }
     },
@@ -29,7 +30,7 @@ let colleges = [
         name: "BMS COLLEGE OF ENGINEERING, POST BOX NO 1908, BULL TEMPLE ROAD, BANGALORE",
         location: "Bangalore",
         fee: "68,560",
-        rank2023: { "1g": "", "gm": "" },
+        rank2023: { "1g": "184", "gm": "114" },
         rank2024: { "1g": "", "gm": "" },
         mock: { "1g": "", "gm": "" }
     },
@@ -40,7 +41,7 @@ let colleges = [
         name: "PES UNIVERSITY, RING ROAD CAMPUS, BANGALORE",
         location: "Bangalore",
         fee: "68,560",
-        rank2023: { "1g": "", "gm": "" },
+        rank2023: { "1g": "493", "gm": "320" },
         rank2024: { "1g": "", "gm": "" },
         mock: { "1g": "", "gm": "" }
     },
@@ -51,34 +52,45 @@ let colleges = [
         name: "DAYANANDA SAGAR COLLEGE OF ENGINEERING SHAVIGE MALLESHWARA HILLS, KUMARASWAMY LAYOUT, BANGALORE-560078",
         location: "Bangalore",
         fee: "68,560",
-        rank2023: { "1g": "", "gm": "" },
+        rank2023: { "1g": "501", "gm": "441" },
         rank2024: { "1g": "", "gm": "" },
         mock: { "1g": "", "gm": "" }
     },
     {
         id: 6,
-        priority: 7,
+        priority: 6,
         code: "C468GX",
         name: "RNS INSTITUTE OF TECHNOLOGY CHANNASANDRA, BANGALORE",
         location: "Bangalore",
         fee: "68,560",
-        rank2023: { "1g": "", "gm": "" },
+        rank2023: { "1g": "686", "gm": "656" },
         rank2024: { "1g": "", "gm": "" },
         mock: { "1g": "", "gm": "" }
     },
     {
         id: 7,
-        priority: 8,
-        code: "C411GX",
-        name: "BANGALORE INSTITUTE OF TECHNOLOGY, K.R ROAD, V.V.PURAM, BANGALORE-560004",
+        priority: 7,
+        code: "C415",
+        name: "BMS INSTITUTE OF TECHNOLOGY & MANAGEMENT POST BOX NO 6443 AVALAHALLI BANGALORE",
         location: "Bangalore",
-        fee: "68,560",
-        rank2023: { "1g": "", "gm": "" },
+        fee: "68,850",
+        rank2023: { "1g": "1309", "gm": "636" },
         rank2024: { "1g": "", "gm": "" },
         mock: { "1g": "", "gm": "" }
     },
     {
         id: 8,
+        priority: 8,
+        code: "C411GX",
+        name: "BANGALORE INSTITUTE OF TECHNOLOGY, K.R ROAD, V.V.PURAM, BANGALORE-560004",
+        location: "Bangalore",
+        fee: "68,560",
+        rank2023: { "1g": "1196", "gm": "797" },
+        rank2024: { "1g": "", "gm": "" },
+        mock: { "1g": "", "gm": "" }
+    },
+    {
+        id: 9,
         priority: 9,
         code: "C421GX",
         name: "DAYANANDA SAGAR COLLEGE OF ARTS,SCIENCE & COMMERCE, SHAVIGE MALLESHWARA HILLS, KUMARASWAMY LAYOUT, BANGALORE-560078",
@@ -89,62 +101,62 @@ let colleges = [
         mock: { "1g": "", "gm": "" }
     },
     {
-        id: 9,
+        id: 10,
         priority: 10,
         code: "C592GX",
         name: "M.S RAMAIAH COLLEGE OF ARTS, SCIENCE & COMMERCE, SURVEY NO 20, CHIKKAMARANAHALLI, MSR NAGAR",
         location: "Bangalore",
         fee: "68,560",
         rank2023: { "1g": "", "gm": "" },
-        rank2024: { "1g": "", "gm": "" },
+        rank2024: { "1g": "2948", "gm": "1186" },
         mock: { "1g": "", "gm": "" }
     },
     {
-        id: 10,
+        id: 11,
         priority: 11,
         code: "C453GX",
         name: "NEW HORIZON COLLEGE OF ENGINEERING (MAT), RING ROAD, NEAR MARATHALLI, BELLANDUR POST, BANGALORE",
         location: "Bangalore",
         fee: "68,560",
         rank2023: { "1g": "", "gm": "" },
-        rank2024: { "1g": "", "gm": "" },
+        rank2024: { "1g": "1197", "gm": "1258" },
         mock: { "1g": "", "gm": "" }
     },
     {
-        id: 11,
+        id: 12,
         priority: 12,
         code: "C576GX",
         name: "RV INSTITUTE OF TECHNOLOGY AND MANAGEMENT KOTHANUR, 8TH PHASE J.P.NAGAR, BENGALURU-560078",
         location: "Bangalore",
         fee: "68,560",
         rank2023: { "1g": "", "gm": "" },
-        rank2024: { "1g": "", "gm": "" },
-        mock: { "1g": "", "gm": "" }
-    },
-    {
-        id: 12,
-        priority: 13,
-        code: "C420GX",
-        name: "CAR INSTITUTE OF TECHNOLOGY, 132, AECS LAYOUT, BANGALORE",
-        location: "Bangalore",
-        fee: "68,560",
-        rank2023: { "1g": "", "gm": "" },
-        rank2024: { "1g": "", "gm": "" },
+        rank2024: { "1g": "2707", "gm": "1304" },
         mock: { "1g": "", "gm": "" }
     },
     {
         id: 13,
+        priority: 13,
+        code: "C420GX",
+        name: "CMR INSTITUTE OF TECHNOLOGY, 132, AECS LAYOUT, BANGALORE",
+        location: "Bangalore",
+        fee: "68,560",
+        rank2023: { "1g": "", "gm": "" },
+        rank2024: { "1g": "2714", "gm": "1378" },
+        mock: { "1g": "", "gm": "" }
+    },
+    {
+        id: 14,
         priority: 14,
         code: "C466GX",
         name: "REVA UNIVERSITY, RUKMINI KNOWLEDGE PARK, YELAHANKA, BANGALORE-560064",
         location: "Bangalore",
         fee: "68,560",
         rank2023: { "1g": "", "gm": "" },
-        rank2024: { "1g": "", "gm": "" },
+        rank2024: { "1g": "1740", "gm": "1604" },
         mock: { "1g": "", "gm": "" }
     },
     {
-        id: 14,
+        id: 15,
         priority: 15,
         code: "C425GX",
         name: "DR. AMBEDKAR INSTITUTE OF TECHNOLOGY, OUTER RING ROAD, BANGALORE",
@@ -155,29 +167,29 @@ let colleges = [
         mock: { "1g": "", "gm": "" }
     },
     {
-        id: 15,
+        id: 16,
         priority: 16,
         code: "C503GX",
         name: "DAYANANDA SAGAR ACADEMY OF TECHNOLOGY AND MANAGEMENT, UDAYAPURA, KANAKAPURA MAIN ROAD OPP. ART OF LIVING INTERNATIONAL CENTER, BANGALORE",
         location: "Bangalore",
         fee: "68,560",
         rank2023: { "1g": "", "gm": "" },
-        rank2024: { "1g": "", "gm": "" },
+        rank2024: { "1g": "2917", "gm": "1827" },
         mock: { "1g": "", "gm": "" }
     },
     {
-        id: 16,
+        id: 17,
         priority: 17,
         code: "C451GX",
         name: "MOUNT CARMEL COLLEGE, NO. 58, PALACE ROAD, BANGALORE",
         location: "Bangalore",
         fee: "68,560",
         rank2023: { "1g": "", "gm": "" },
-        rank2024: { "1g": "", "gm": "" },
+        rank2024: { "1g": "2854", "gm": "1634" },
         mock: { "1g": "", "gm": "" }
     },
     {
-        id: 17,
+        id: 18,
         priority: 18,
         code: "C526GX",
         name: "CHRIST ACADEMY INSTITUTE FOR ADVANCED STUDIES CHRIST NAGAR, HULLAHALLI, BEGUR - KOPPA ROAD, SAKKALAWARA POST, BANGALORE -560083",
@@ -188,62 +200,62 @@ let colleges = [
         mock: { "1g": "", "gm": "" }
     },
     {
-        id: 18,
+        id: 19,
         priority: 19,
         code: "C534GX",
         name: "JSS ACADEMY OF TECHNICAL EDUCATION, JSSATE CAMPUS, BANGALORE",
         location: "Bangalore",
         fee: "68,560",
         rank2023: { "1g": "", "gm": "" },
-        rank2024: { "1g": "", "gm": "" },
+        rank2024: { "1g": "3081", "gm": "1627" },
         mock: { "1g": "", "gm": "" }
     },
     {
-        id: 19,
+        id: 20,
         priority: 20,
         code: "C520GX",
         name: "DAYANANDA SAGAR UNIVERSITY, CITY CAMPUS KUDLU GATE, HOSUR ROAD, BANGALORE-560114",
         location: "Bangalore",
         fee: "68,560",
         rank2023: { "1g": "", "gm": "" },
-        rank2024: { "1g": "", "gm": "" },
+        rank2024: { "1g": "3041", "gm": "1461" },
         mock: { "1g": "", "gm": "" }
     },
     {
-        id: 20,
+        id: 21,
         priority: 21,
         code: "C401GX",
         name: "ACHARYA INSTITUTE OF MANAGEMENT AND SCIENCES PEENYA, BANGALORE",
         location: "Bangalore",
         fee: "68,560",
         rank2023: { "1g": "", "gm": "" },
-        rank2024: { "1g": "", "gm": "" },
+        rank2024: { "1g": "2650", "gm": "1896" },
         mock: { "1g": "", "gm": "" }
     },
     {
-        id: 21,
+        id: 22,
         priority: 22,
         code: "C524GX",
         name: "ACHARYA INSTITUTE OF TECHNOLOGY SOLDEVANAHALLI, HESARAGHATTA MAIN ROAD, BANGALORE -560090",
         location: "Bangalore",
         fee: "68,560",
         rank2023: { "1g": "", "gm": "" },
-        rank2024: { "1g": "", "gm": "" },
+        rank2024: { "1g": "3442", "gm": "2509" },
         mock: { "1g": "", "gm": "" }
     },
     {
-        id: 22,
+        id: 23,
         priority: 23,
         code: "C402GX",
         name: "ACHARYA INSTITUTE OF GRADUATE STUDIES, DR. SARVEPALLI RADHAKRISHNAN ROAD, SOLADEVANAHALLI HESARAGATTA MAIN ROAD, BANGALORE - 560107",
         location: "Bangalore",
         fee: "68,560",
         rank2023: { "1g": "", "gm": "" },
-        rank2024: { "1g": "", "gm": "" },
+        rank2024: { "1g": "3442", "gm": "2509" },
         mock: { "1g": "", "gm": "" }
     },
     {
-        id: 23,
+        id: 24,
         priority: 24,
         code: "CS276X",
         name: "CMR UNIVERSITY NO.5, BHUVANAGIRI, OMBR LAYOUT, BANGALORE-43",
