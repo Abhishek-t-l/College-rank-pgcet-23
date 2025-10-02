@@ -459,3 +459,72 @@ function loadFromLocalStorage() {
         colleges = JSON.parse(savedColleges);
     }
 }
+// Download college data as Excel file
+function downloadExcel() {
+    // Create workbook and worksheet
+    const wb = XLSX.utils.book_new();
+    const ws = XLSX.utils.json_to_sheet(prepareExcelData());
+    
+    // Add worksheet to workbook
+    XLSX.utils.book_append_sheet(wb, ws, "PGCET Colleges");
+    
+    // Generate Excel file and download
+    XLSX.writeFile(wb, `PGCET_Colleges_${getCurrentDate()}.xlsx`);
+}
+
+// Prepare data for Excel export
+function prepareExcelData() {
+    return colleges.map(college => ({
+        'Priority': college.priority,
+        'College Code': college.code,
+        'College Name': college.name,
+        'Location': college.location,
+        'Course Fee (₹)': college.fee,
+        '2023 Rank 1G': college.rank2023["1g"] || '',
+        '2023 Rank GM': college.rank2023["gm"] || '',
+        '2024 Rank 1G': college.rank2024["1g"] || '',
+        '2024 Rank GM': college.rank2024["gm"] || '',
+        'Mock Allotment 1G': college.mock["1g"] || '',
+        'Mock Allotment GM': college.mock["gm"] || ''
+    }));
+}
+
+// Get current date for filename
+function getCurrentDate() {
+    const now = new Date();
+    return now.toISOString().split('T')[0]; // YYYY-MM-DD format
+}
+
+// Alternative method using CSV if you prefer (simpler, no library needed)
+function downloadCSV() {
+    const headers = ['Priority', 'College Code', 'College Name', 'Location', 'Course Fee (₹)', '2023 Rank 1G', '2023 Rank GM', '2024 Rank 1G', '2024 Rank GM', 'Mock Allotment 1G', 'Mock Allotment GM'];
+    const csvData = colleges.map(college => [
+        college.priority,
+        `"${college.code}"`,
+        `"${college.name}"`,
+        `"${college.location}"`,
+        college.fee,
+        college.rank2023["1g"] || '',
+        college.rank2023["gm"] || '',
+        college.rank2024["1g"] || '',
+        college.rank2024["gm"] || '',
+        college.mock["1g"] || '',
+        college.mock["gm"] || ''
+    ]);
+    
+    const csvContent = [headers, ...csvData]
+        .map(row => row.join(','))
+        .join('\n');
+    
+    const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+    const link = document.createElement('a');
+    const url = URL.createObjectURL(blob);
+    
+    link.setAttribute('href', url);
+    link.setAttribute('download', `PGCET_Colleges_${getCurrentDate()}.csv`);
+    link.style.visibility = 'hidden';
+    
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
