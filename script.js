@@ -274,6 +274,7 @@ const collegeForm = document.getElementById('collegeForm');
 const saveCollegeBtn = document.getElementById('saveCollegeBtn');
 const addCollegeBtn = document.getElementById('addCollegeBtn');
 const printBtn = document.getElementById('printBtn');
+const downloadExcelBtn = document.getElementById('downloadExcelBtn');
 
 // Initialize the application
 document.addEventListener('DOMContentLoaded', function() {
@@ -284,7 +285,10 @@ document.addEventListener('DOMContentLoaded', function() {
     addCollegeBtn.addEventListener('click', openAddCollegeModal);
     saveCollegeBtn.addEventListener('click', saveCollege);
     printBtn.addEventListener('click', printTable);
+    downloadExcelBtn.addEventListener('click', downloadExcel);
 });
+
+
 
 // Render college table
 function renderCollegeTable() {
